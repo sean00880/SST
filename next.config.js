@@ -4,9 +4,7 @@ const path = require('path');
 const nextConfig = {
   distDir: process.env.NEXT_DIST_DIR || '.next',
   output: process.env.NEXT_OUTPUT_MODE,
-  experimental: {
-    outputFileTracingRoot: path.join(__dirname, '../'),
-  },
+  // With the app at repo root, no custom outputFileTracingRoot is needed.
   eslint: {
     ignoreDuringBuilds: true,
   },

@@ -2,6 +2,13 @@
 .next
 .cache
 .build
+/.vercel
+*.env
+*.env.local
+*.env.*.local
+**/.env
+**/.env.local
+**/.env.*.local
 *.nfs*
 **/.yarn/
 !**/.yarn/patches

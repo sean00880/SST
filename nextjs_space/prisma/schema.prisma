@@ -1,0 +1,35 @@
+
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+    provider = "prisma-client-js"
+    binaryTargets = ["native", "linux-musl-arm64-openssl-3.0.x"]
+}
+
+datasource db {
+    provider = "sqlite"
+    url      = env("DATABASE_URL")
+}
+
+model ContactSubmission {
+  id               String   @id @default(cuid())
+  firstName        String
+  lastName         String
+  email            String
+  phone            String?
+  preferredContact String   @default("email")
+  sessionType      String   @default("not-sure")
+  concerns         String?
+  urgency          String   @default("routine")
+  message          String
+  consent          Boolean
+  submittedAt      DateTime
+  source           String   @default("website-contact-form")
+  status           String   @default("new")
+  notes            String?
+  createdAt        DateTime @default(now())
+  updatedAt        DateTime @updatedAt
+
+  @@map("contact_submissions")
+}

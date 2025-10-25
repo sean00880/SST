@@ -1,0 +1,26 @@
+{
+  "name": "@growsz/seek-strive-thrive",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Seek Strive Thrive Ecosystem - Mental Health & Wellness Platform",
+  "scripts": {
+    "dev": "cd nextjs_space && yarn dev",
+    "build": "cd nextjs_space && yarn build",
+    "start": "cd nextjs_space && yarn start",
+    "lint": "cd nextjs_space && yarn lint",
+    "install:app": "cd nextjs_space && yarn install",
+    "db:migrate": "cd nextjs_space && npx prisma migrate dev",
+    "db:generate": "cd nextjs_space && npx prisma generate",
+    "db:seed": "cd nextjs_space && npx prisma db seed",
+    "db:studio": "cd nextjs_space && npx prisma studio"
+  },
+  "keywords": [
+    "mental-health",
+    "wellness",
+    "nextjs",
+    "prisma",
+    "nextauth"
+  ],
+  "author": "GROWSZ",
+  "license": "UNLICENSED"
+}

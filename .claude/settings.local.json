@@ -1,0 +1,15 @@
+{
+  "enabledMcpjsonServers": [
+    "perplexity",
+    "github",
+    "redis",
+    "context7",
+    "firecrawl",
+    "chrome-devtools"
+  ],
+  "permissions": {
+    "allow": [
+      "Bash(yarn install)"
+    ]
+  }
+}

@@ -5,7 +5,11 @@
                     "dev":  "next dev",
                     "build":  "next build",
                     "start":  "next start",
-                    "lint":  "next lint"
+                    "lint":  "next lint",
+                    "db:migrate": "npx prisma migrate dev",
+                    "db:generate": "npx prisma generate",
+                    "db:seed": "npx prisma db seed",
+                    "db:studio": "npx prisma studio"
                 },
     "prisma":  {
                    "seed":  "tsx --require dotenv/config scripts/seed.ts"
